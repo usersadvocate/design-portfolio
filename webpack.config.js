@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/", 
-    clean: true,     
+    publicPath: "/",
+    clean: true,
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
@@ -22,6 +22,14 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
