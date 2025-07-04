@@ -1,0 +1,15 @@
+@use "./utils/variables" as vars;
+@use "./base/links.scss";
+@use "./base/grid.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: vars.$font-title;
+  background-color: vars.$color-bg;
+}

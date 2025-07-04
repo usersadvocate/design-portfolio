@@ -1,0 +1,57 @@
+@use "../utils/variables" as vars;
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  padding: 4rem;
+  align-items: center;
+  min-height: 100vh;
+
+  &__title {
+    font-size: 2.5rem;
+    font-family: vars.$font-title;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    font-family: vars.$font-description;
+  }
+
+  &__details {
+    font-size: 1rem;
+    font-family: vars.$font-description;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+
+      strong {
+        display: inline-block;
+        width: 4rem;
+        font-weight: 600;
+      }
+
+      a {
+        margin-left: 0.5rem;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+  }
+}

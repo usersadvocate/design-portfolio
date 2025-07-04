@@ -1,0 +1,59 @@
+@use "../utils/variables" as vars;
+
+.about {
+  & {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 4rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-family: vars.$font-description;
+    font-weight: 400;
+    color: vars.$color-text-primary;
+
+    &-note {
+      color: vars.$color-text-acent;
+      position: relative;
+      display: inline-block;
+    }
+
+    &-label {
+      position: absolute;
+      top: -7rem;
+      left: 65%;
+      transform: translateX(-50%);
+      font-family: vars.$font-note;
+      font-size: 2rem;
+      color: #000;
+      white-space: nowrap;
+    }
+
+    &-arrow {
+      position: absolute;
+      top: -6rem;
+      left: 35%;
+      transform: translateX(-50%);
+      width: 115px;
+      height: auto;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 6.5rem;
+    font-family: vars.$font-note;
+    font-size: 1.8rem;
+    list-style: disc;
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+  }
+}

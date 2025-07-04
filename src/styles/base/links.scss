@@ -1,0 +1,12 @@
+@use "../utils/variables.scss" as vars;
+
+a {
+  color: vars.$color-text-secondary;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #ec3e23;
+  }
+}

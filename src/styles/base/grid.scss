@@ -1,0 +1,42 @@
+@use "../utils/variables.scss" as vars;
+
+.grid-overlay {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+      repeating-linear-gradient(transparent, transparent 99%, vars.$grid-color),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 99%,
+        vars.$grid-color
+      );
+    background-size:
+      100% 3rem,
+      3rem 100%;
+
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 0%,
+      rgba(0, 0, 0, 0.2) 15%,
+      black 100%
+    );
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-composite: intersect;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
