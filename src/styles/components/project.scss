@@ -7,16 +7,28 @@
   padding: 4rem;
   align-items: center;
   min-height: 100vh;
+  @media (max-width: 1200px) {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 2fr;
+    gap: 0;
+    align-items: baseline;
+  }
 
   &__title {
     font-size: 2.5rem;
     font-family: vars.$font-title;
     font-weight: 400;
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+    }
   }
 
   &__description {
     font-size: 1.5rem;
     font-family: vars.$font-description;
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+    }
   }
 
   &__details {
@@ -24,6 +36,9 @@
     font-family: vars.$font-description;
     list-style: none;
     padding: 0;
+    @media (max-width: 1200px) {
+      font-size: 1.5rem;
+    }
 
     li {
       margin-bottom: 0.75rem;

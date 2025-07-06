@@ -32,6 +32,11 @@
       font-size: 2rem;
       color: #000;
       white-space: nowrap;
+      @media (max-width: 1137px) {
+        left: 115%;
+        transform: translateX(0%);
+        font-size: 2.2rem;
+      }
     }
 
     &-arrow {
@@ -41,6 +46,10 @@
       transform: translateX(-50%);
       width: 115px;
       height: auto;
+      @media (max-width: 1137px) {
+        left: 100%;
+        transform: translateX(-30%);
+      }
     }
   }
 
@@ -51,7 +60,10 @@
     font-family: vars.$font-note;
     font-size: 1.8rem;
     list-style: disc;
-
+    @media (max-width: 1200px) {
+      bottom: 6rem;
+      font-size: 2.2rem;
+    }
     li {
       margin-bottom: 0.2rem;
     }
