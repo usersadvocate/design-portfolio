@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/components/project.scss";
 
 type ProjectSectionProps = {
@@ -6,6 +7,7 @@ type ProjectSectionProps = {
   imageSrc: string;
   years: string;
   scope: string;
+  link: string;
 };
 
 export default function ProjectSection({
@@ -14,11 +16,14 @@ export default function ProjectSection({
   imageSrc,
   years,
   scope,
+  link,
 }: ProjectSectionProps) {
   return (
     <section className="project">
       <div>
-        <h2 className="project__title">{title}</h2>
+        <h2 className="project__title">
+          <Link to={link}>{title}</Link>
+        </h2>
         <p className="project__description">{description}</p>
         <p className="project__details">
           <strong>Years:</strong> {years}

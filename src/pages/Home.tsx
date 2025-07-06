@@ -16,6 +16,7 @@ export default function Home() {
         years="2023"
         scope="Product Market Fit"
         imageSrc="/images/bom_thumbnail.png"
+        link="/project/bom"
       />
       <ProjectSection
         title="Continuous Discovery"
@@ -23,6 +24,7 @@ export default function Home() {
         years="2022"
         scope="User Research"
         imageSrc="/images/discovery_thumbnail.png"
+        link="/project/discovery"
       />
       <ProjectSection
         title="Plego"
@@ -30,6 +32,7 @@ export default function Home() {
         years="2022"
         scope="Design system"
         imageSrc="/images/plego_thumbnail.png"
+        link="/project/plego"
       />
       <Footer />
     </div>

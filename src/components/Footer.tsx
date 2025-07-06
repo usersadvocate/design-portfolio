@@ -28,7 +28,7 @@ export default function Footer() {
           </a>
         </li>
       </div>
-      <div className="footer__copyright">©2025</div>
+      <div className="footer__copyright">design & code ©2025</div>
     </footer>
   );
 }

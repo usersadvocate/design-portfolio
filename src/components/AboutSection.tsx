@@ -35,7 +35,7 @@ export default function AboutSection() {
       <ul className="about__list">
         <li>
           <a
-            href="https://example.com/curious"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -44,7 +44,7 @@ export default function AboutSection() {
         </li>
         <li>
           <a
-            href="https://example.com/curious"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +53,7 @@ export default function AboutSection() {
         </li>
         <li>
           <a
-            href="https://example.com/curious"
+            href="https://www.meetup.com/members/376807802/"
             target="_blank"
             rel="noopener noreferrer"
           >
