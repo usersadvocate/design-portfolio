@@ -15,21 +15,21 @@ export default function Home() {
         description="Creating a procurement tool on a cloud platform from scratch"
         years="2023"
         scope="Product Market Fit"
-        imageSrc="/images/bom.png"
+        imageSrc="/images/bom_thumbnail.png"
       />
       <ProjectSection
         title="Continuous Discovery"
         description="Framework on how to continuously validate and improve products to meet customer needs"
         years="2022"
         scope="User Research"
-        imageSrc="/images/discovery.png"
+        imageSrc="/images/discovery_thumbnail.png"
       />
       <ProjectSection
         title="Plego"
         description="Team work on scalability of the design system"
         years="2022"
         scope="Design system"
-        imageSrc="/images/plego.png"
+        imageSrc="/images/plego_thumbnail.png"
       />
       <Footer />
     </div>
