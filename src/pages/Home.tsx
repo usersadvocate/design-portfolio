@@ -15,7 +15,7 @@ export default function Home() {
         description="Creating a procurement tool on a cloud platform from scratch"
         years="2023"
         scope="Product Market Fit"
-        imageSrc="/images/bom_thumbnail.png"
+        imageSrc="/images/bom.png"
         link="/project/bom"
       />
       <ProjectSection
@@ -23,7 +23,7 @@ export default function Home() {
         description="Framework on how to continuously validate and improve products to meet customer needs"
         years="2022"
         scope="User Research"
-        imageSrc="/images/discovery_thumbnail.png"
+        imageSrc="/images/discovery.png"
         link="/project/discovery"
       />
       <ProjectSection
@@ -31,7 +31,7 @@ export default function Home() {
         description="Team work on scalability of the design system"
         years="2022"
         scope="Design system"
-        imageSrc="/images/plego_thumbnail.png"
+        imageSrc="/images/plego.png"
         link="/project/plego"
       />
       <Footer />
