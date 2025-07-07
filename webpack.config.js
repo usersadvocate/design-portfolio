@@ -44,6 +44,7 @@ module.exports = {
           from: path.resolve(__dirname, "public/images"),
           to: "images",
         },
+        { from: "public/icons", to: "icons" },
       ],
     }),
   ],

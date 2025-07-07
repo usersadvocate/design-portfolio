@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/components/about.scss";
 
 export default function AboutSection() {
@@ -34,22 +35,10 @@ export default function AboutSection() {
       </p>
       <ul className="about__list">
         <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Curious by nature;
-          </a>
+          <Link to="/about/pet-project">Curious by nature;</Link>
         </li>
         <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Playing with AI;
-          </a>
+          <Link to="/about/ai">Playing with AI;</Link>
         </li>
         <li>
           <a

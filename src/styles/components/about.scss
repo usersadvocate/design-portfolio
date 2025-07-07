@@ -59,13 +59,27 @@
     right: 6.5rem;
     font-family: vars.$font-note;
     font-size: 1.8rem;
-    list-style: disc;
+    list-style: none;
     @media (max-width: 1200px) {
       bottom: 6rem;
       font-size: 2.2rem;
     }
     li {
       margin-bottom: 0.2rem;
+      position: relative;
+      padding-left: 2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.8rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url("../../../public/icons/scribble.svg") no-repeat center
+          center;
+        background-size: contain;
+      }
     }
   }
 }
