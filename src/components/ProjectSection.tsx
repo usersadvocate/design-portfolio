@@ -5,7 +5,7 @@ type ProjectSectionProps = {
   title: string;
   description: string;
   imageSrc: string;
-  years: string;
+  year: string;
   scope: string;
   link: string;
 };
@@ -14,7 +14,7 @@ export default function ProjectSection({
   title,
   description,
   imageSrc,
-  years,
+  year,
   scope,
   link,
 }: ProjectSectionProps) {
@@ -26,7 +26,7 @@ export default function ProjectSection({
         </h2>
         <p className="project__description">{description}</p>
         <p className="project__details">
-          <strong>Years:</strong> {years}
+          <strong>Year:</strong> {year}
         </p>
         <p className="project__details">
           <strong>Scope:</strong> {scope}

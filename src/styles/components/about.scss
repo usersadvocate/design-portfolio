@@ -79,6 +79,9 @@
         background: url("../../../public/icons/scribble.svg") no-repeat center
           center;
         background-size: contain;
+        @media (max-width: 1200px) {
+          top: 1rem;
+        }
       }
     }
   }
