@@ -4,7 +4,7 @@ import "../styles/components/project.scss";
 type ProjectSectionProps = {
   title: string;
   description: string;
-  imageSrc: string;
+  cover: string;
   year: string;
   scope: string;
   link: string;
@@ -13,7 +13,7 @@ type ProjectSectionProps = {
 export default function ProjectSection({
   title,
   description,
-  imageSrc,
+  cover,
   year,
   scope,
   link,
@@ -33,7 +33,7 @@ export default function ProjectSection({
         </p>
       </div>
       <div className="project__image">
-        <img src={imageSrc} alt={title} />
+        <img src={cover} alt={title} />
       </div>
     </section>
   );

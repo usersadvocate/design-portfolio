@@ -1,0 +1,19 @@
+const plego = {
+  title: "Plego",
+  description: "Team work on scalability of the design system",
+  year: "2022",
+  scope: "Design system",
+  cover: "/images/plego.png",
+  link: "/project/plego",
+  background:
+    "Design backlog was growing because our company product was selling well. We realized that we greatly lack consistency and rigor in our design. Design team hadn't one language with developers. And designer couldn't give a correct estimate of the task’s capacity.",
+  solution:
+    "Instead of starting to build a design system from scratch, we carefully looked through what we had already created. We already had a UI kit. We wanted to use atomic approach to building design system.",
+  role: "I had to maintain it and contribute. Once a month to make a decision about adding/excluding components.",
+  lessons:
+    "Time management plays a key role in this case. The development and implementation of a design system requires the full-time commitment of one designer. The other part of the team, which will use the updated system, should do new tasks within the new system and allocate time to update layouts in old tasks.",
+  outcome:
+    "Just as consistency increased, so did user efficiency. Because designers and developers aren’t caught up in redundant questions or repetitive work, they’re freed up for projects that deliver more business value.",
+};
+
+export default plego;
