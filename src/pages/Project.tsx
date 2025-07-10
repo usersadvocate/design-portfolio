@@ -12,19 +12,32 @@ export default function Project() {
 
   if (!project) return <div>Project not found</div>;
 
+  const firstGroup = ["background", "solution", "role"];
+  const secondGroup = ["lessons", "outcome"];
+
+  const renderSectionGroup = (ids: string[]) => (
+    <div className="project-sections-grid">
+      {project.sections
+        .filter((section) => ids.includes(section.id))
+        .map((section) => (
+          <section key={section.id} id={section.id} className="project-section-card">
+            <h3 className="project-section-card__title">{section.title}</h3>
+            <p className="project-section-card__content">{section.content}</p>
+          </section>
+        ))}
+    </div>
+  );
+
   return (
     <section className="project-layout grid-overlay">
       <h1>{project.title}</h1>
       <img src={project.cover} alt={project.title} />
-      <div className="details-grid">
-      <h3 className="details">{project.background}</h3>
-      <h3 className="details">{project.solution}</h3>
-      <h3 className="details">{project.role}</h3>
-      </div>
-      <div className="details-grid">
-      <h3 className="details">{project.lessons}</h3>
-      <h3 className="details">{project.outcome}</h3>
-      </div>
+
+      {/* Background + Solution + Role */}
+      {renderSectionGroup(firstGroup)}
+
+      {/* Lessons + Outcome */}
+      {renderSectionGroup(secondGroup)}
     </section>
   );
 }
