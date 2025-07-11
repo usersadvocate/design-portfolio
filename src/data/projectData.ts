@@ -1,8 +1,9 @@
 import bom from './projects/bom';
 import discovery from './projects/discovery';
 import plego from './projects/plego';
+import { Project } from '../types/project';
 
-const projectData = {
+const projectData: Record<string, Project> = {
   bom,
   discovery,
   plego,

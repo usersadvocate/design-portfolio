@@ -32,7 +32,7 @@ const discovery = {
         "From an architectural point of view, the Continuous Discovery project was successful, as our product includes both a user interface and admin settings. If you want to bring users onto your platform, it's essential to discuss with architects and developers the capabilities of your codebase and database.",
     },
     {
-      id: "utcome",
+      id: "outcome",
       title: "Outcome",
       content:
         "During the first week after the project was launched, over 30 respondents responded, and almost all of them agreed to participate in our research.",

@@ -3,10 +3,8 @@
 .project-layout {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   padding: 4rem;
-  min-height: 100vh;
 
   h1 {
     font-size: 3rem;
@@ -21,7 +19,7 @@
   }
   .project-sections-grid {
     max-width: 1100px;
-    margin: 2rem 0;
+    margin: 4rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2.5rem;
@@ -44,6 +42,31 @@
         font-family: vars.$font-description;
         font-weight: 400;
       }
+    }
+  }
+  .project-body {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-body-section {
+    margin: 2rem 0;
+    &__text {
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 1.6;
+      font-family: vars.$font-title;
+      font-weight: 500;
+      color: vars.$color-text-primary;
+      padding-bottom: 0.5rem;
+    }
+    &__description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-family: vars.$font-description;
+      font-weight: 400;
+      padding-bottom: 2rem;
     }
   }
 }
