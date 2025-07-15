@@ -9,13 +9,13 @@ const bom = {
     {
       title: "The current UI problems",
       description:
-        "1. Some functionality was difficult to discover: Releases, Adding alternates 2. Users sometimes miss information due to huge horizontal scroll when a BOM has a large amount of data.",
+        "1. Some functionality was difficult to discover: Releases, Adding alternates \n2. Users sometimes miss information due to huge horizontal scroll when a BOM has a large amount of data.",
       image: "/images/bom-ui-old.png",
     },
     {
       title: "The new UI advantages",
       description:
-        "1. All available features have been brought to the surface 2. The table data has been revised and grouped in a way that delays the need for horizontal scrolling.",
+        "1. All available features have been brought to the surface \n2. The table data has been revised and grouped in a way that delays the need for horizontal scrolling.",
       image: "/images/bom-ui-new.png",
     },
   ],

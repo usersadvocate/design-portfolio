@@ -6,6 +6,37 @@ const discovery = {
   scope: "User Research",
   cover: "/images/discovery.png",
   link: "/project/discovery",
+  bodySections: [
+    {
+      title: "Collaborative Efforts",
+      description:
+        "We started our work on the implementation of this research by discussing with analysts, developers, product managers, and designers whether this process is suitable for us at all and whether it is worth investing effort in it. For the research, Teresa suggests creating a trio from the product team members — 1 PM, 1 designer, 1 developer. In our case, we wanted to include an analyst in this process. However, the planning of the research part has been postponed until we figure out how it will work. We organized a meeting with the development team, demonstrated our idea, and asked them to consider how we could implement a separate pool of users into our database, add and remove users from there, and send them invitations every 30 days. Those who have already been contacted should be marked in the database to avoid spamming them with an invitation to an interview for the next 30 days.",
+      image: "/images/admin-panel.png",
+    },
+    {
+      title: "Database Development",
+      description:
+        "The difficulties during the implementation stage were mostly related to the development and adaptability of our database for panel users. For all the features we were unsure about, we decided to try with an MVP and added an additional column to the database, along with an “if-else” condition when sending invitations from our admin panel.",
+      image: "/images/new-popup.png",
+    },
+    {
+      title: "Saving Time and Resources",
+      description:
+        "While the developers were thinking about the database architecture, I was creating a user flow to cover all the corner cases. By the next iteration, the analyst had applied the user flow, the tester had applied the requirements, and I already had layouts in which the user could independently include themselves in the pool of loyal users who would help to develop our product. The last stage was verifying the invitations, which we decided to send directly to the application for better conversion with the marketing department.",
+      image: "/images/invintation.png",
+    },
+    {
+      title: "",
+      description: "",
+      image: "/images/commitment.png",
+    },
+    {
+      title: "Results",
+      description:
+        "The user receives an invitation to an interview every two months. We use Calendly service, which integrates well with all mail tools. In addition, Calendly sends a reminder about the meetings, which saved us from having to develop this process.",
+      image: "/images/slots.png",
+    },
+  ],
   sections: [
     {
       id: "background",
