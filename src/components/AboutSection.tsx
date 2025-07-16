@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components/about.scss";
+import "../styles/components/aboutSection.scss";
 
 export default function AboutSection() {
   return (
@@ -35,7 +35,7 @@ export default function AboutSection() {
       </p>
       <ul className="about__list">
         <li>
-          <Link to="/about/pet-project">Curious by nature;</Link>
+          <Link to="/about/pet_project">Curious by nature;</Link>
         </li>
         <li>
           <Link to="/about/ai">Playing with AI;</Link>

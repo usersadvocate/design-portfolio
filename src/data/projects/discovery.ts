@@ -28,7 +28,7 @@ const discovery = {
     {
       title: "",
       description: "",
-      image: "/images/commitment.png",
+      image: "/images/research-pool.png",
     },
     {
       title: "Results",

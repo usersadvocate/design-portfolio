@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components/project.scss";
+import "../styles/components/projectSection.scss";
 
 type ProjectSectionProps = {
   title: string;
