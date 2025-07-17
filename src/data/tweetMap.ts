@@ -22,12 +22,13 @@ const tweetData: Record<
   },
   ai: {
     tweetId: "1945058896319553926",
-    description: "I'm working on an AI project, it’ll be live here soon. Until then, take a look at the ideas, tools, and questions I’m currently exploring.",
+    description:
+      "I'm working on an AI project, it’ll be live here soon. Until then, take a look at the ideas, tools, and questions I’m currently exploring.",
     name: "Julia",
     handle: "itsthearcher",
     avatar: "/images/avatar.jpg",
     text: "I'm inspired by HOW I AI episode.\n It's the most thoughtful one I've heard so far. And I'm going to do the \n same exercise with my GPT Copywriting framework agent. I've already \nstarted, will share how it goes.",
-    images: ["/images/tweetai.jpeg"],
+    images: ["/images/tweetai.png"],
   },
 };
 
