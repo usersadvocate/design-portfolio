@@ -2,27 +2,39 @@ import { Link, useParams } from "react-router-dom";
 import "../styles/components/footerNav.scss";
 
 const navItems = [
-  { id: "bom", label: "BOM" },
-  { id: "discovery", label: "Discovery" },
-  { id: "plego", label: "Plego" },
+  { id: "bom", label: "BOM Project" },
+  { id: "discovery", label: "Discovery Project" },
+  { id: "plego", label: "Plego Project" },
 ];
 
 export default function FooterNav() {
   const { id } = useParams();
+  const currentIndex = navItems.findIndex((item) => item.id === id);
+
+  const prevItem = currentIndex > 0 ? navItems[currentIndex - 1] : null;
+  const nextItem =
+    currentIndex !== -1 && currentIndex < navItems.length - 1
+      ? navItems[currentIndex + 1]
+      : null;
 
   return (
     <nav className="footer-nav">
       <div className="nav-container">
-        <Link to="/">← Home</Link>
-        {navItems.map((item) => (
-          <Link
-            key={item.id}
-            to={`/project/${item.id}`}
-            className={item.id === id ? "active" : ""}
-          >
-            {item.label}
-          </Link>
-        ))}
+        <div className="nav-item nav-left">
+          {prevItem && (
+            <Link to={`/project/${prevItem.id}`}>← {prevItem.label}</Link>
+          )}
+        </div>
+
+        <div className="nav-item nav-center">
+          <Link to="/">Home</Link>
+        </div>
+
+        <div className="nav-item nav-right">
+          {nextItem && (
+            <Link to={`/project/${nextItem.id}`}>{nextItem.label} →</Link>
+          )}
+        </div>
       </div>
     </nav>
   );

@@ -42,3 +42,14 @@
     z-index: 1;
   }
 }
+
+@mixin link-style($base-color: vars.$color-text-secondary) {
+  color: $base-color;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #ec3e23;
+  }
+}

@@ -1,33 +1,37 @@
 @use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
 
 .footer-nav {
   position: sticky;
-  width: 100%;
   bottom: 0;
+  width: 100%;
   background-color: vars.$color-text-primary;
-  opacity: 0.6;
-  border-top: 1px solid #ddd;
+  opacity: 0.8;
   padding: 0.75rem 1rem;
-  display: flex;
-  justify-content: center;
   z-index: 9;
 
   .nav-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-right {
+    justify-content: flex-start;
     gap: 1.5rem;
-    flex-wrap: wrap;
+  }
+
+  .nav-left {
+    justify-content: flex-start;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: center;
   }
 
   a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-
-    &.active {
-    }
-
-    &:hover {
-      text-decoration: underline;
-    }
+    @include mixins.link-style(#fff);
   }
 }
