@@ -19,22 +19,22 @@ export default function ProjectSection({
   link,
 }: ProjectSectionProps) {
   return (
-    <section className="project">
-      <div>
-        <h2 className="project__title">
-          <Link to={link}>{title}</Link>
-        </h2>
-        <p className="project__description">{description}</p>
-        <p className="project__details">
-          <strong>Year:</strong> {year}
-        </p>
-        <p className="project__details">
-          <strong>Scope:</strong> {scope}
-        </p>
-      </div>
-      <div className="project__image">
-        <img src={cover} alt={title} />
-      </div>
-    </section>
+    <Link to={link} className="project-link">
+      <section className="project">
+        <div>
+          <h2 className="project__title">{title}</h2>
+          <p className="project__description">{description}</p>
+          <p className="project__details">
+            <strong>Year:</strong> {year}
+          </p>
+          <p className="project__details">
+            <strong>Scope:</strong> {scope}
+          </p>
+        </div>
+        <div className="project__image">
+          <img src={cover} alt={title} />
+        </div>
+      </section>
+    </Link>
   );
 }

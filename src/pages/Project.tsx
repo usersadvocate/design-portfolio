@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projectData";
 import "../styles/components/projectLayout.scss";
+import FooterNav from "../components/FooterNav";
 
 export default function Project() {
   const { id } = useParams();
@@ -20,14 +21,18 @@ export default function Project() {
       {project.sections
         .filter((section) => ids.includes(section.id))
         .map((section) => (
-          <section key={section.id} id={section.id} className="project-section-card">
+          <section
+            key={section.id}
+            id={section.id}
+            className="project-section-card"
+          >
             <h3 className="project-section-card__title">{section.title}</h3>
             <p className="project-section-card__content">{section.content}</p>
           </section>
         ))}
     </div>
   );
-  
+
   const renderBodySections = () => {
     if (!project.bodySections?.length) return null;
     return (
@@ -36,7 +41,9 @@ export default function Project() {
           <section key={index} className="project-body-section">
             <div className="project-body-section__text">
               <h3 className="project-body-section__title">{section.title}</h3>
-              <p className="project-body-section__description">{section.description}</p>
+              <p className="project-body-section__description">
+                {section.description}
+              </p>
             </div>
             {section.image && (
               <img
@@ -50,20 +57,23 @@ export default function Project() {
       </div>
     );
   };
-  
+
   return (
-    <section className="project-layout grid-overlay">
-      <h1>{project.title}</h1>
-      <img src={project.cover} alt={project.title} />
+    <>
+      <section className="project-layout grid-overlay">
+        <h1>{project.title}</h1>
+        <img src={project.cover} alt={project.title} />
 
-      {/* Background + Solution + Role */}
-      {renderSectionGroup(firstGroup)}
-      
-      {/* Body sections go here */}
-      {renderBodySections()}
+        {/* Background + Solution + Role */}
+        {renderSectionGroup(firstGroup)}
 
-      {/* Lessons + Outcome */}
-      {renderSectionGroup(secondGroup)}
-    </section>
+        {/* Body sections go here */}
+        {renderBodySections()}
+
+        {/* Lessons + Outcome */}
+        {renderSectionGroup(secondGroup)}
+      </section>
+      <FooterNav />
+    </>
   );
 }

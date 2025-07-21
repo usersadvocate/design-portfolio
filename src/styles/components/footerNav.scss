@@ -1,0 +1,33 @@
+@use "../utils/variables" as vars;
+
+.footer-nav {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  background-color: vars.$color-text-primary;
+  opacity: 0.6;
+  border-top: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+
+  .nav-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+
+    &.active {
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
