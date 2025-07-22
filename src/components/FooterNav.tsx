@@ -1,6 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import "../styles/components/footerNav.scss";
 
+import ArrowLeft from "../icons/arrow-left.svg";
+import ArrowRight from "../icons/arrow-right.svg";
+
 const navItems = [
   { id: "bom", label: "BOM Project" },
   { id: "discovery", label: "Discovery Project" },
@@ -22,7 +25,10 @@ export default function FooterNav() {
       <div className="nav-container">
         <div className="nav-item nav-left">
           {prevItem && (
-            <Link to={`/project/${prevItem.id}`}>← {prevItem.label}</Link>
+            <Link to={`/project/${prevItem.id}`}>
+              <ArrowLeft className="nav-icon" />
+              {prevItem.label}
+            </Link>
           )}
         </div>
 
@@ -32,7 +38,10 @@ export default function FooterNav() {
 
         <div className="nav-item nav-right">
           {nextItem && (
-            <Link to={`/project/${nextItem.id}`}>{nextItem.label} →</Link>
+            <Link to={`/project/${nextItem.id}`}>
+              {nextItem.label}
+              <ArrowRight className="nav-icon" />
+            </Link>
           )}
         </div>
       </div>

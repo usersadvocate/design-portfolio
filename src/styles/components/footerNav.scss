@@ -11,8 +11,8 @@
   z-index: 9;
   font-size: 1.2rem;
   @media (max-width: 1200px) {
-    padding: 1.6rem;
-    font-size: 1.8rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .nav-container {
@@ -22,18 +22,20 @@
     text-align: center;
   }
 
-  .nav-right {
-    justify-content: flex-start;
-    gap: 1.5rem;
-  }
-
-  .nav-left {
-    justify-content: flex-start;
+  .nav-item {
+    @include mixins.link-style(#fff);
   }
 
   .nav-center {
     display: flex;
     justify-content: center;
+  }
+  .nav-icon {
+    vertical-align: middle;
+    padding: 0 0.5rem;
+    @media (max-width: 1200px) {
+      height: 3rem;
+    }
   }
 
   a {

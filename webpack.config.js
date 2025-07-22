@@ -25,7 +25,12 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
       },
       {
@@ -49,9 +54,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    historyApiFallback: true, 
+    historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, "public"),
     },
     port: 3000,
     open: true,
