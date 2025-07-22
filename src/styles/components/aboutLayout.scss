@@ -12,6 +12,9 @@
     font-weight: 400;
     padding-bottom: 2rem;
     max-width: 600px;
+    @media (max-width: 1200px) {
+      font-size: 1.8rem;
+    }
   }
 
   .tweet-card {
