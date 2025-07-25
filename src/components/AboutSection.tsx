@@ -31,7 +31,8 @@ export default function AboutSection() {
           </svg>
         </span>
         , I thrive in complex environments where I can grow through challenge,
-        solve creatively, and apply data-driven thinking to design solutions.
+        solve creatively, and balance rapid iteration with deep, thoughtful
+        design solutions.
       </p>
       <ul className="about__list">
         <li>
