@@ -1,4 +1,5 @@
 @use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
 
 .about-layout {
   display: flex;
@@ -12,6 +13,7 @@
     font-weight: 400;
     padding-bottom: 2rem;
     max-width: 600px;
+
     @media (max-width: 1200px) {
       font-size: 1.8rem;
     }
@@ -46,6 +48,7 @@
     height: 48px;
     border-radius: 50%;
   }
+
   .tweet-user {
     display: flex;
     flex-direction: column;
@@ -54,6 +57,7 @@
   .tweet-name {
     font-weight: 600;
   }
+
   .tweet-handle {
     color: #565c67;
   }
@@ -61,6 +65,7 @@
   .tweet-text {
     margin-bottom: 1rem;
   }
+
   .tweet-images {
     display: flex;
     margin-bottom: 1rem;
@@ -68,6 +73,52 @@
     img {
       width: 100%;
       border-radius: 8px;
+    }
+  }
+
+  &.blog-layout {
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 4rem auto;
+    background-color: #fcfcfa;
+
+    .back-link {
+      @include mixins.link-style;
+    }
+
+    .blog-title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      color: vars.$color-text-primary;
+      margin: 1rem 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        #f2f2f2 0,
+        #f2f2f2 1px,
+        #fcfcfa 1px,
+        #fcfcfa 10px
+      );
+      padding: 2rem 1rem;
+      border-radius: 8px;
+    }
+
+    .blog-section {
+      margin-top: 1rem;
+    }
+
+    .section-heading {
+      font-size: 1.5rem;
+      color: vars.$color-text-primary;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .blog-text {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: vars.$color-text-secondary;
+      margin-bottom: 1.5rem;
+      white-space: pre-line;
     }
   }
 }
