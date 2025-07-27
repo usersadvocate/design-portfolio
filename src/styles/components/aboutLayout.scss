@@ -81,11 +81,18 @@
     max-width: 800px;
     margin: 4rem auto;
     background-color: #fcfcfa;
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      margin: unset;
+    }
 
     .back-link {
       font-family: vars.$font-note;
       @include mixins.link-style;
       font-size: 1.2rem;
+      @media (max-width: 1200px) {
+        font-size: 1.5rem;
+      }
     }
 
     .blog-title {
