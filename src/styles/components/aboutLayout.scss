@@ -113,11 +113,19 @@
       color: vars.$color-text-primary;
       font-weight: 500;
       margin-bottom: 1rem;
+      @media (max-width: 1200px) {
+        font-size: 2rem;
+      }
     }
     .blog-heading {
       font-size: 1rem;
       color: vars.$color-text-primary;
       font-weight: 400;
+      @media (max-width: 1200px) {
+        font-size: 1.5rem;
+        font-weight: 450;
+        margin-bottom: 0.5rem;
+      }
     }
 
     .blog-text {
@@ -126,11 +134,19 @@
       color: vars.$color-text-secondary;
       margin-bottom: 1.5rem;
       white-space: pre-line;
+      @media (max-width: 1200px) {
+        font-size: 1.5rem;
+        line-height: auto;
+      }
     }
     .blog-list {
       line-height: 1.75;
       margin-bottom: 1.5rem;
       list-style: circle;
+      @media (max-width: 1200px) {
+        font-size: 1.5rem;
+        line-height: auto;
+      }
     }
   }
 }
