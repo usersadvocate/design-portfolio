@@ -27,7 +27,7 @@ export default function FooterNav() {
           {prevItem && (
             <Link to={`/project/${prevItem.id}`}>
               <ArrowLeft className="nav-icon" />
-              {prevItem.label}
+              <span className="label">{prevItem.label}</span>
             </Link>
           )}
         </div>
@@ -39,7 +39,7 @@ export default function FooterNav() {
         <div className="nav-item nav-right">
           {nextItem && (
             <Link to={`/project/${nextItem.id}`}>
-              {nextItem.label}
+              <span className="label">{nextItem.label}</span>
               <ArrowRight className="nav-icon" />
             </Link>
           )}

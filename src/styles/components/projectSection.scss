@@ -8,11 +8,17 @@
   align-items: center;
   min-height: 60vh;
   cursor: pointer;
+
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column-reverse;
     align-items: baseline;
     min-height: 40vh;
+  }
+
+  @media (max-width: 500px) {
+    padding: 2rem;
+    gap: 2rem;
   }
 
   &__info {
@@ -28,6 +34,10 @@
     @media (max-width: 1200px) {
       font-size: 3rem;
     }
+
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   &__description {
@@ -35,8 +45,13 @@
     font-size: 1.5rem;
     font-family: vars.$font-description;
     padding-bottom: 1.5rem;
+
     @media (max-width: 1200px) {
       font-size: 2rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -46,8 +61,13 @@
     font-family: vars.$font-description;
     list-style: none;
     padding-bottom: 0.4rem;
+
     @media (max-width: 1200px) {
       font-size: 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
     }
 
     li {
@@ -69,6 +89,9 @@
 
   &__button {
     margin-top: 2rem;
+    @media (max-width: 500px) {
+      margin-top: 1rem;
+    }
   }
 
   &__image {
@@ -86,10 +109,17 @@
       object-fit: cover;
       transition: transform 0.3s ease;
     }
+
     @media (max-width: 1200px) {
       margin-top: 2rem;
     }
+
+    @media (max-width: 500px) {
+      gap: 1rem;
+      border-radius: 0.5rem;
+    }
   }
+
   &:hover .project__image img {
     transform: scale(1.05);
   }

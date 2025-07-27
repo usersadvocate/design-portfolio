@@ -10,9 +10,13 @@
   padding: 1rem;
   z-index: 9;
   font-size: 1.2rem;
+
   @media (max-width: 1200px) {
     padding: 1.2rem;
     font-size: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    padding: 0.8rem;
   }
 
   .nav-container {
@@ -24,15 +28,25 @@
 
   .nav-item {
     @include mixins.link-style(#fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    @media (max-width: 500px) {
+      gap: 0.25rem;
+    }
   }
 
   .nav-center {
     display: flex;
     justify-content: center;
   }
+
   .nav-icon {
     vertical-align: middle;
     padding: 0 0.5rem;
+
     @media (max-width: 1200px) {
       height: 3rem;
     }
@@ -40,5 +54,14 @@
 
   a {
     @include mixins.link-style(#fff);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .label {
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 }

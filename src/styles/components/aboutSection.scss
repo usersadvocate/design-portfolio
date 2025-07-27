@@ -12,7 +12,7 @@
   }
 
   &__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: vars.$font-description;
     font-weight: 400;
     color: vars.$color-text-primary;
@@ -25,8 +25,8 @@
 
     &-label {
       position: absolute;
-      top: -7rem;
-      left: 65%;
+      top: -8rem;
+      left: 68%;
       transform: translateX(-50%);
       font-family: vars.$font-note;
       font-size: 2rem;

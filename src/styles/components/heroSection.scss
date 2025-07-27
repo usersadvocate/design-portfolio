@@ -1,18 +1,17 @@
 @use "../utils/variables" as vars;
 
 .hero {
-  & {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 4rem;
-    @media (max-width: 1200px) {
-      & {
-        padding-bottom: 18rem;
-      }
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 4rem;
+
+  @media (max-width: 500px) {
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   &__title {
@@ -20,6 +19,14 @@
     font-weight: 500;
     color: vars.$color-text-primary;
     margin: 0;
+
+    @media (max-width: 1200px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 3.5rem;
+    }
   }
 
   &__subtitle {
@@ -27,5 +34,13 @@
     font-family: vars.$font-description;
     color: vars.$color-text-primary;
     margin-top: 1rem;
+
+    @media (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
+    }
   }
 }
