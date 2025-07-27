@@ -1,6 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -22,7 +25,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          isProduction ? MiniCssExtractPlugin.loader : "style-loader",
+          "css-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.svg$/i,
@@ -52,6 +59,13 @@ module.exports = {
         { from: "public/icons", to: "icons" },
       ],
     }),
+    ...(isProduction
+      ? [
+          new MiniCssExtractPlugin({
+            filename: "styles.css",
+          }),
+        ]
+      : []),
   ],
   devServer: {
     historyApiFallback: true,
@@ -61,5 +75,5 @@ module.exports = {
     port: 3000,
     open: true,
   },
-  mode: process.env.NODE_ENV === "production" ? "production" : "development",
+  mode: isProduction ? "production" : "development",
 };
