@@ -36,10 +36,10 @@ export default function AboutSection() {
       </p>
       <ul className="about__list">
         <li>
-          <Link to="/about/pet_project">Curious by nature;</Link>
+          <Link to="/about/ai">Working with AI;</Link>
         </li>
         <li>
-          <Link to="/about/ai">Playing with AI;</Link>
+          <Link to="/about/pet_project">Curious by nature;</Link>
         </li>
         <li>
           <a

@@ -15,7 +15,7 @@
     max-width: 600px;
 
     @media (max-width: 1200px) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -83,7 +83,9 @@
     background-color: #fcfcfa;
 
     .back-link {
+      font-family: vars.$font-note;
       @include mixins.link-style;
+      font-size: 1.2rem;
     }
 
     .blog-title {
@@ -109,8 +111,13 @@
     .section-heading {
       font-size: 1.5rem;
       color: vars.$color-text-primary;
-      font-weight: 400;
+      font-weight: 500;
       margin-bottom: 1rem;
+    }
+    .blog-heading {
+      font-size: 1rem;
+      color: vars.$color-text-primary;
+      font-weight: 400;
     }
 
     .blog-text {
@@ -119,6 +126,11 @@
       color: vars.$color-text-secondary;
       margin-bottom: 1.5rem;
       white-space: pre-line;
+    }
+    .blog-list {
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      list-style: circle;
     }
   }
 }
