@@ -1,14 +1,20 @@
 @use "../utils/variables" as vars;
 
 .about {
-  & {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 4rem;
+  @media (max-width: 1200px) {
     padding: 4rem;
+    min-height: 80vh;
+  }
+  @media (max-width: 500px) {
+    padding: 2rem;
+    min-height: 60vh;
   }
 
   &__title {
@@ -16,6 +22,12 @@
     font-family: vars.$font-description;
     font-weight: 400;
     color: vars.$color-text-primary;
+    @media (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
 
     &-note {
       color: vars.$color-text-acent;
@@ -32,10 +44,13 @@
       font-size: 2rem;
       color: #000;
       white-space: nowrap;
-      @media (max-width: 1137px) {
-        left: 115%;
-        transform: translateX(0%);
-        font-size: 2.2rem;
+
+      &:hover {
+        color: vars.$color-text-acent;
+      }
+
+      @media (max-width: 1200px) {
+        display: none;
       }
     }
 
@@ -46,27 +61,34 @@
       transform: translateX(-50%);
       width: 115px;
       height: auto;
-      @media (max-width: 1137px) {
-        left: 100%;
-        transform: translateX(-30%);
+
+      @media (max-width: 1200px) {
+        display: none;
       }
     }
   }
 
   &__list {
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 5.5rem;
     right: 6.5rem;
     font-family: vars.$font-note;
     font-size: 1.8rem;
     list-style: none;
+
     @media (max-width: 1200px) {
-      bottom: 6rem;
-      font-size: 2.5rem;
+      position: static;
+      margin-top: 4rem; 
+      padding: 0;
+      align-self: flex-start; 
+      right: auto;
+      bottom: auto;
     }
+
     @media (max-width: 500px) {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
+
     li {
       margin-bottom: 0.2rem;
       position: relative;
@@ -79,9 +101,9 @@
         top: 1rem;
         width: 0.8rem;
         height: 0.8rem;
-        background: url("../../../public/icons/scribble.svg") no-repeat center
-          center;
+        background: url("../../../public/icons/scribble.svg") no-repeat center center;
         background-size: contain;
+
         @media (max-width: 1200px) {
           top: 1.3rem;
         }

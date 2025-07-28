@@ -6,16 +6,14 @@ export default function AboutSection() {
     <section className="about">
       <p className="about__title">
         As a designer with a{" "}
-        <span className="about__title-note">
+        <a
+          href="https://github.com/julpchelova"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="about__title-note"
+        >
           frontend background
-          <a
-            href="https://github.com/julpchelova"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="about__title-label"
-          >
-            check my github
-          </a>
+          <span className="about__title-label">check my github</span>
           <svg
             className="about__title-arrow"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +27,7 @@ export default function AboutSection() {
               fill="black"
             />
           </svg>
-        </span>
+        </a>
         , I thrive in complex environments where I can grow through challenge,
         solve creatively, and balance rapid iteration with deep, thoughtful
         design solutions.
