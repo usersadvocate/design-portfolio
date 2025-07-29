@@ -140,12 +140,7 @@ const ai: SideProjectBlog = {
     { type: "heading", text: "Examples Drive Understanding" },
     {
       type: "paragraph",
-      text: "Abstract guidelines weren't enough. The good/bad example comparisons became the most referenced part of our framework, proving that concrete examples are more valuable than conceptual rules.",
-    },
-    { type: "heading", text: "AI Amplifies Good Processes" },
-    {
-      type: "paragraph",
-      text: "The AI agent was only as good as the framework behind it. Rather than replacing human judgment, it scaled our established processes and reduced routine decision-making overhead.",
+      text: "Abstract guidelines weren't enough. The good/bad example comparisons became the most referenced part of our framework, proving that concrete examples are more valuable than conceptual rules. This insight became even more apparent during AI training, while the framework provided solid conceptual foundation, I discovered that breaking it down into more granular, example-driven components significantly improved the agent's performance. The lesson reinforced that both humans and AI learn best through specific, actionable examples rather than high-level principles.",
     },
   ],
   outcome: [
