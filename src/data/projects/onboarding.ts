@@ -3,7 +3,7 @@ const onboarding = {
     description: "Solution to turn IT onboarding chaos into a smooth 5-minute experience",
     year: "2025",
     scope: "Progressive Disclosure",
-    cover: "/images/onboarding.png",
+    cover: "/images/it-onboarding.png",
     link: "/project/onboarding",
     bodySections: [
       {
