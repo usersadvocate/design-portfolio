@@ -1,6 +1,6 @@
 const bom = {
   title: "BOM Portal",
-  description: "Creating a procurement tool on a cloud platform from scratch",
+  description: "Procurement tool on a cloud platform from scratch",
   year: "2023",
   scope: "Product Market Fit",
   cover: "/images/bom.png",
