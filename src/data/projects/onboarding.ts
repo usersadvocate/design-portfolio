@@ -22,7 +22,7 @@ const onboarding = {
         id: "background",
         title: "Background",
         content:
-          "This case is under NDA, so I'm currently reworking all UI elements using Lovable - it'll be here soon. In the meantime, you can explore my other cases."
+          "This case is under NDA, so I'm currently reworking all UI elements using ❤️ Lovable - it'll be here soon. In the meantime, you can explore my other cases."
     },
     //   {
     //     id: "solution",
