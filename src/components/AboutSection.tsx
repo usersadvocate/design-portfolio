@@ -37,7 +37,7 @@ export default function AboutSection() {
           <Link to="/about/ai">Working with AI;</Link>
         </li>
         <li>
-          <Link to="/about/pet_project">Curious by nature;</Link>
+          <Link to="/about/pet_project">Exploring design engineering;</Link>
         </li>
         <li>
           <a
