@@ -51,7 +51,7 @@ const ai: SideProjectBlog = {
       items: [
         "Identified the copywriting consistency problem and its impact on product development",
         "Designed and documented the complete copywriting framework",
-        "Collaborated with product and operations teams to validate and refine guidelines",
+        "Collaborated with product, marketing and operations teams to validate and refine guidelines",
         "Trained and fine-tuned the AI agent with company-specific examples",
         "Facilitated adoption across teams",
       ],
@@ -86,14 +86,14 @@ const ai: SideProjectBlog = {
     {
       title: "Collaborative Refinement",
       text: [
-        "Rather than working in isolation, I facilitated multiple iteration sessions with the product, marketing and operations teams.\nThese sessions were crucial for ensuring the framework reflected real business needs and team capabilities.\nWe refined terminology, adjusted tone guidelines, and expanded scenario coverage based on actual product challenges.",
+        "Rather than working in isolation, I facilitated multiple iteration sessions with the product, marketing and operations teams. These sessions were crucial for ensuring the framework reflected real business needs and team capabilities. We refined terminology, adjusted tone guidelines, and expanded scenario coverage based on actual product challenges.",
       ],
     },
     {
       title: "AI Implementation",
       text: [
         "Once the framework was solid, I began training a custom GPT agent. This wasn't just about uploading the documentation—I created extensive examples showing the AI how to apply our guidelines in practice.",
-        'I configured the AI with a specific persona: "The Copywriter" – a UX & Product Copy Specialist for our platform. The agent was designed to embody our brand voice while maintaining the technical expertise needed for B2B SaaS copy.',
+        'I configured the AI with a specific persona: "The Copywriter" – a UX Copy Specialist for our platform. The agent was designed to embody our brand voice while maintaining the technical expertise needed for B2B SaaS copy.',
       ],
     },
     {
@@ -105,8 +105,8 @@ const ai: SideProjectBlog = {
       items: [
         "Complete framework integration with our Notion documentation uploaded as knowledge base",
         "Detailed persona definition that positioned the AI as a UX-minded copywriter specifically built to support teams building user-friendly B2B platforms",
-        "Tone balancing across four core modes: Conversational (friendly, peer-to-peer), Straightforward (clear and concise), Reassuring (supportive and calming), with specific guidance on when to use each",
-        "Comprehensive style rules covering everything from capitalization (sentence case only) to voice guidelines (second person for guidance, first person plural for company voice)",
+        "Tone balancing across core modes: Conversational (friendly, peer-to-peer), Straightforward (clear and concise), Reassuring (supportive and calming), with specific guidance on when to use each",
+        "Comprehensive style rules covering everything from capitalization (sentence case only) to voice guidelines",
         "Good/bad example pairs showing practical applications of our guidelines",
         "Context-aware recommendations that considered user mental models and real-world scenarios",
       ],
