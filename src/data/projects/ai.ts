@@ -125,6 +125,11 @@ const ai: SideProjectBlog = {
       text: "This human-centered approach to AI training ensured the output consistently matched our empathetic, user-first approach to product copy.",
     },
     {
+      type: "image",
+      src: "/images/copy-help.png",
+      alt: "Help messages based on the framework",
+    },
+    {
       title: "Continuous Improvement",
       text: [
         "The framework remains a living document. As we encounter new copywriting challenges or receive team feedback, we update both the documentation and AI training. This iterative approach ensures the solution evolves with our product and team needs.",
