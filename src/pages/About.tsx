@@ -5,7 +5,8 @@ import sideProjectsData from "../data/sideProjectsData";
 type Block =
   | { type: "heading"; text: string }
   | { type: "paragraph"; text: string }
-  | { type: "list"; items: string[] };
+  | { type: "list"; items: string[] }
+  | { type: "image"; src: string; alt: string };
 
 type ContentBlock = { title: string; text: string[]; image?: string } | Block;
 
@@ -54,6 +55,15 @@ export default function About() {
               <li key={i}>{item}</li>
             ))}
           </ul>
+        );
+      case "image":
+        return (
+          <img
+            className="blog-image"
+            key={key}
+            src={block.src}
+            alt={block.alt}
+          />
         );
       default:
         return null;

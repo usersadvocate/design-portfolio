@@ -18,7 +18,8 @@ export type SideProjectContentBlock = {
 export type Block =
   | { type: "heading"; text: string }
   | { type: "paragraph"; text: string }
-  | { type: "list"; items: string[] };
+  | { type: "list"; items: string[] }
+  | { type: "image"; src: string; alt: string };
 
 export type SideProjectBlog = {
   type: "blog";

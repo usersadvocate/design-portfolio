@@ -84,6 +84,11 @@ const ai: SideProjectBlog = {
       ],
     },
     {
+      type: "image",
+      src: "/images/copy-examples.png",
+      alt: "Examples of good and bad copy side-by-side from the framework documentation",
+    },
+    {
       title: "Collaborative Refinement",
       text: [
         "Rather than working in isolation, I facilitated multiple iteration sessions with the product, marketing and operations teams. These sessions were crucial for ensuring the framework reflected real business needs and team capabilities. We refined terminology, adjusted tone guidelines, and expanded scenario coverage based on actual product challenges.",
