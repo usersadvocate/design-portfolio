@@ -36,7 +36,7 @@ const bom = {
       id: "role",
       title: "Role",
       content:
-        "As lead designer, I conducted user research and competitive analysis to identify best practices. Created high-fidelity prototypes for testing and collaborated with PMs across the platform. Organized stakeholder meetings and presented design solutions to gain project approval.",
+        "As the lead designer, I conducted user research and competitive analysis to identify best practices. Created high-fidelity prototypes for testing and collaborated with PMs across the platform. Organized stakeholder meetings and presented design solutions to gain project approval.",
     },
     {
       id: "lessons",
