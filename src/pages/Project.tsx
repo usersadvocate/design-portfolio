@@ -41,9 +41,10 @@ export default function Project() {
           <section key={index} className="project-body-section">
             <div className="project-body-section__text">
               <h3 className="project-body-section__title">{section.title}</h3>
-              <p className="project-body-section__description">
-                {section.description}
-              </p>
+              <p
+                className="project-body-section__description"
+                dangerouslySetInnerHTML={{ __html: section.description }}
+              />
             </div>
             {section.image && (
               <img

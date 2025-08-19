@@ -1,40 +1,45 @@
+// External link icon SVG
+const externalLinkIcon =
+  "<svg width='20' height='20' viewBox='0 0 240 240' fill='none' xmlns='http://www.w3.org/2000/svg' style='display: inline; margin-left: 4px; vertical-align: middle;'><path d='M192.458 26.8759C181.333 29.0009 170.667 31.0842 160 33.1259C157.875 33.5425 156.375 33.8342 153.625 33.9175C151.583 34.0009 147.25 34.0842 147.625 31.8759C148.125 30.0842 148.708 28.8759 152.333 27.7925C161.708 25.0425 171.417 23.7092 181.042 22.3342C189.542 21.1259 196.042 20.3342 203.625 19.7092C207.167 19.4175 208.583 21.1675 208.167 24.4175C207.792 27.3342 207.458 30.3342 206.542 33.1259C203.292 43.2092 199.792 53.1675 196.375 63.2092C195.958 64.4592 195.708 65.4592 195 66.8759C194.125 68.5842 193.583 69.8759 191.792 69.3759C190.083 68.9175 190.167 66.4175 190.458 65.1675C192.667 54.6675 197.583 33.0842 197.583 31.8759C192.125 35.3759 187 38.5009 182.042 41.9175C147.625 65.8759 115.208 92.0842 89.4167 125.668C69 152.251 52.0833 180.793 39.5833 211.918C38.8333 213.751 37.9167 215.543 37 217.251C35.7917 219.584 34.75 220.584 33.5 220.043C31.2917 218.709 31.7083 216.918 31.9167 215.459C32.2917 212.543 33.2917 209.668 34.25 206.876C47.4583 169.668 68.4584 137.084 93.8334 107.126C119.875 76.3759 151.708 52.7092 185.667 31.6675C187.5 30.6259 191.792 27.6259 192.458 26.8759Z' fill='currentColor' stroke='currentColor' stroke-width='8'/></svg>";
+
 const onboarding = {
-    title: "Onboarding",
-    description: "Solution to turn IT onboarding chaos into a smooth 5-minute experience",
-    year: "2025",
-    scope: "Progressive Disclosure",
-    cover: "/images/it-onboarding.png",
-    link: "/project/onboarding",
-    bodySections: [
-      {
-        title: "",
-        description: "This case is under NDA, so I'm currently reworking all UI elements using ❤️ Lovable - it'll be here soon. In the meantime, you can explore my other cases.",
-           image: "",
-      },
-      {
-        title: "",
-        description: "",
-          image: "",
-      },
-    ],
-    sections: [
-      {
-        id: "background",
-        title: "Background",
-        content:
-          "Manual employee onboarding required teams to spend hours per employee on account setup and device ordering. Managers handled email and SaaS account creation individually for each new hire, while companies lacked formal processes for security compliance tracking."
+  title: "Onboarding",
+  description:
+    "Solution to turn IT onboarding chaos into a smooth 5-minute experience",
+  year: "2025",
+  scope: "Progressive Disclosure",
+  cover: "/images/it-onboarding.png",
+  link: "/project/onboarding",
+  bodySections: [
+    {
+      title: "",
+      description: `This case is under NDA, so I'm currently reworking all UI elements using 💜 Lovable - it'll be here soon. <br>In the meantime, you can read about how <a href='https://x.com/itsthearcher/status/1956334928657809806' target='_blank' rel='noopener noreferrer'>I work on a Figma plugin ${externalLinkIcon}</a>, <a href='/about/ai' target='_blank' rel='noopener noreferrer'>built a GPT-powered agent for UX copywriting ${externalLinkIcon}</a> or explore my other cases.`,
+      image: "",
     },
-      {
-        id: "solution",
-        title: "Solution",
-        content:
-        "Designed an automated onboarding feature to eliminate manual tracking and simplify the experience for non-technical users."
+    {
+      title: "",
+      description: "",
+      image: "",
     },
-      {
-        id: "role",
-        title: "Role",
-        content:
-          "As the lead designer, I simplified the complex onboarding workflow by breaking it into manageable steps. Applied two key design principles - simplicity and progressive disclosure - to help users navigate the entire process without feeling overwhelmed."
+  ],
+  sections: [
+    {
+      id: "background",
+      title: "Background",
+      content:
+        "Manual employee onboarding required teams to spend hours per employee on account setup and device ordering. Managers handled email and SaaS account creation individually for each new hire, while companies lacked formal processes for security compliance tracking.",
+    },
+    {
+      id: "solution",
+      title: "Solution",
+      content:
+        "Designed an automated onboarding feature to eliminate manual tracking and simplify the experience for non-technical users.",
+    },
+    {
+      id: "role",
+      title: "Role",
+      content:
+        "As the lead designer, I simplified the complex onboarding workflow by breaking it into manageable steps. Applied two key design principles - simplicity and progressive disclosure - to help users navigate the entire process without feeling overwhelmed.",
     },
     //   {
     //     id: "lessons",
@@ -42,14 +47,13 @@ const onboarding = {
     //     content:
     //       ""
     // },
-      {
-        id: "outcome",
-        title: "Outcome",
-        content:
-        "Reduced employee onboarding time by 75%, removing hours of manual work. This feature became a major marketing asset and differentiated us from competitors. The design approach I used proved so effective it became our standard methodology for future projects."  
+    {
+      id: "outcome",
+      title: "Outcome",
+      content:
+        "Reduced employee onboarding time by 75%, removing hours of manual work. This feature became a major marketing asset and differentiated us from competitors. The design approach I used proved so effective it became our standard methodology for future projects.",
     },
-    ],
-  };
-  
-  export default onboarding;
-  
+  ],
+};
+
+export default onboarding;
