@@ -117,7 +117,10 @@ export default function About() {
   return (
     <div className="about-layout">
       {data.description && (
-        <p className="about-description">{data.description}</p>
+        <p
+          className="about-description"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        />
       )}
 
       <a

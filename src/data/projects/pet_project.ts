@@ -1,10 +1,10 @@
 import { SideProjectTweet } from "../../types/sideProject";
+import { externalLinkIcon } from "../../utils/externalLinkIcon";
 
 const pet_project: SideProjectTweet = {
   type: "tweet",
   tweetId: "1943656784884912547",
-  description:
-    "I'm doing vibe coding a linter as a Figma plugin - it'll be here soon. In the meantime, here's a glimpse into what I'm doing as a design engineer at work.",
+  description: `I'm AI-assisted coding <a href='https://github.com/usersadvocate/figma-plugin' target='_blank' rel='noopener noreferrer'>a linter as a Figma plugin ${externalLinkIcon}</a>. It will be here soon. In the meantime, here's a glimpse into what I'm doing as a design engineer at work.`,
   name: "Julia",
   handle: "itsthearcher",
   avatar: "/images/avatar.jpg",
