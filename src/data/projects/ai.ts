@@ -3,6 +3,7 @@ import { SideProjectBlog } from "../../types/sideProject";
 const ai: SideProjectBlog = {
   type: "blog",
   title: "Streamlining Copywriting at Scale: Building an AI-Powered Framework",
+  date: "2 August, 2025",
   background: [
     {
       type: "paragraph",

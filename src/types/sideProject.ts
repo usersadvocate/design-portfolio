@@ -25,6 +25,7 @@ export type SideProjectBlog = {
   type: "blog";
   title: string;
   description?: string;
+  date?: string;
   background?: Block[];
   solution?: Block[];
   role?: Block[];

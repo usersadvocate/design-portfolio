@@ -110,6 +110,7 @@
     align-items: flex-start;
     max-width: 800px;
     margin: 4rem auto;
+    border-radius: 16px;
     background-color: #fcfcfa;
 
     @media (max-width: 1200px) {
@@ -125,6 +126,9 @@
       font-family: vars.$font-note;
       @include mixins.link-style;
       font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
 
       @media (max-width: 1200px) {
         font-size: 1.5rem;
@@ -133,22 +137,29 @@
       @media (max-width: 500px) {
         font-size: 1.3rem;
       }
+
+      .back-link-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+
+        @media (max-width: 1200px) {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        @media (max-width: 500px) {
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
     }
 
     .blog-title {
       font-size: 2.5rem;
+      font-weight: 400;
       line-height: 1.3;
       color: vars.$color-text-primary;
-      margin: 1rem 0;
-      background-image: repeating-linear-gradient(
-        45deg,
-        #f2f2f2 0,
-        #f2f2f2 1px,
-        #fcfcfa 1px,
-        #fcfcfa 10px
-      );
-      padding: 2rem 1rem;
-      border-radius: 8px;
+      margin: 3rem 0;
 
       @media (max-width: 1200px) {
         font-size: 4rem;
@@ -160,6 +171,23 @@
       }
     }
 
+    .blog-date {
+      display: block;
+      font-size: 1rem;
+      color: vars.$color-text-secondary;
+      margin-top: 1rem;
+      font-family: vars.$font-description;
+      font-weight: 400;
+
+      @media (max-width: 1200px) {
+        font-size: 1.3rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.1rem;
+      }
+    }
+
     .blog-section {
       margin-top: 1rem;
     }
@@ -167,7 +195,7 @@
     .section-heading {
       font-size: 1.5rem;
       color: vars.$color-text-primary;
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 1rem;
 
       @media (max-width: 1200px) {

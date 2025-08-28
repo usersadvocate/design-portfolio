@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import "../styles/components/aboutLayout.scss";
 import sideProjectsData from "../data/sideProjectsData";
+import ArrowLeft from "../icons/arrow-left.svg";
 
 type Block =
   | { type: "heading"; text: string }
@@ -86,13 +87,22 @@ export default function About() {
     ) : null;
 
   if (data.type === "blog") {
-    const { title, background, solution, role, content, lessons, outcome } =
-      data;
+    const {
+      title,
+      date,
+      background,
+      solution,
+      role,
+      content,
+      lessons,
+      outcome,
+    } = data;
 
     return (
       <div className="about-layout blog-layout">
         <a className="back-link" href="/">
-          ← Back to Home
+          <ArrowLeft className="back-link-icon" />
+          Back to Home
         </a>
 
         <h1 className="blog-title">
@@ -102,6 +112,7 @@ export default function About() {
               {idx === 0 && <br />}
             </span>
           ))}
+          {date && <span className="blog-date">{date}</span>}
         </h1>
 
         {renderBlockSection("Background", background)}
