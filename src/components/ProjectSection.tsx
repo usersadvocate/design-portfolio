@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { PlainButton } from "../components/PlainButton";
+import { useDeferredValue } from "react";
 import "../styles/components/projectSection.scss";
+import { PlainButton } from "./PlainButton";
 
 type ProjectSectionProps = {
   title: string;
@@ -19,12 +20,16 @@ export default function ProjectSection({
   scope,
   link,
 }: ProjectSectionProps) {
+  // Use deferred value for performance optimization
+  const deferredTitle = useDeferredValue(title);
+  const deferredDescription = useDeferredValue(description);
+
   return (
     <Link to={link} className="project-link">
       <section className="project">
         <div className="project__info">
-          <h2 className="project__title">{title}</h2>
-          <p className="project__description">{description}</p>
+          <h2 className="project__title">{deferredTitle}</h2>
+          <p className="project__description">{deferredDescription}</p>
           <p className="project__details">
             <strong>Year:</strong> {year}
           </p>
@@ -36,7 +41,7 @@ export default function ProjectSection({
           </div>
         </div>
         <div className="project__image">
-          <img src={cover} alt={title} />
+          <img src={cover} alt={deferredTitle} />
         </div>
       </section>
     </Link>

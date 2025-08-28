@@ -27,6 +27,40 @@
     }
   }
 
+  .back-link {
+    font-family: vars.$font-note;
+    @include mixins.link-style;
+    font-size: 1.2rem;
+    display: flex;
+    width: inherit;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 1200px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+    }
+
+    .back-link-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+
+      @media (max-width: 1200px) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      @media (max-width: 500px) {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+  }
+
   .tweet-card {
     display: flex;
     flex-direction: column;
@@ -122,44 +156,12 @@
       padding: 2rem;
     }
 
-    .back-link {
-      font-family: vars.$font-note;
-      @include mixins.link-style;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-
-      @media (max-width: 1200px) {
-        font-size: 1.5rem;
-      }
-
-      @media (max-width: 500px) {
-        font-size: 1.3rem;
-      }
-
-      .back-link-icon {
-        width: 1.2rem;
-        height: 1.2rem;
-
-        @media (max-width: 1200px) {
-          width: 1.5rem;
-          height: 1.5rem;
-        }
-
-        @media (max-width: 500px) {
-          width: 1.3rem;
-          height: 1.3rem;
-        }
-      }
-    }
-
-    .blog-title {
+  .blog-title {
       font-size: 2.5rem;
       font-weight: 400;
       line-height: 1.3;
       color: vars.$color-text-primary;
-      margin: 3rem 0;
+      margin: 0 0 3rem 0;
 
       @media (max-width: 1200px) {
         font-size: 4rem;
