@@ -12,7 +12,7 @@
   padding: 1rem;
   z-index: 9;
   font-size: 1.2rem;
-  transition: background 0.3s ease;
+  transition: background vars.$transition-smooth;
 
   &.at-bottom {
     background: vars.$color-text-primary;

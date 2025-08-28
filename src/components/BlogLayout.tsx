@@ -1,5 +1,7 @@
 import React from "react";
 import ArrowLeft from "../icons/arrow-left.svg";
+import TableOfContents from "./TableOfContents";
+import "../styles/components/tableOfContents.scss";
 
 type Block =
   | { type: "heading"; text: string }
@@ -25,8 +27,9 @@ interface BlogLayoutProps {
 
 const renderBlock = (block: Block | ContentBlock, key: React.Key) => {
   if ("title" in block) {
+    const id = block.title.toLowerCase().replace(/\s+/g, "-");
     return (
-      <div key={key}>
+      <div key={key} id={id}>
         <h2 className="section-heading">{block.title}</h2>
         {block.image && (
           <img src={block.image} alt={block.title} className="blog-image" />
@@ -42,8 +45,9 @@ const renderBlock = (block: Block | ContentBlock, key: React.Key) => {
 
   switch (block.type) {
     case "heading":
+      const id = block.text.toLowerCase().replace(/\s+/g, "-");
       return (
-        <p className="blog-heading" key={key}>
+        <p className="blog-heading" key={key} id={id}>
           {block.text}
         </p>
       );
@@ -72,7 +76,10 @@ const renderBlock = (block: Block | ContentBlock, key: React.Key) => {
 
 const renderBlockSection = (heading: string, blocks?: Block[]) =>
   Array.isArray(blocks) && blocks.length > 0 ? (
-    <div className="blog-section">
+    <div
+      className="blog-section"
+      id={heading.toLowerCase().replace(/\s+/g, "-")}
+    >
       <h2 className="section-heading">{heading}</h2>
       {blocks.map((block, idx) => renderBlock(block, idx))}
     </div>
@@ -89,26 +96,58 @@ export default function BlogLayout({ data, backLink }: BlogLayoutProps) {
   const { title, date, background, solution, role, content, lessons, outcome } =
     data;
 
+  // Extract headings in chronological order for table of contents (excluding main title)
+  const allHeadings: Array<{ type: "heading"; text: string }> = [];
+
+  // Add sections in chronological order as they appear in the document
+  if (background) {
+    allHeadings.push({ type: "heading", text: "Background" });
+  }
+  if (solution) {
+    allHeadings.push({ type: "heading", text: "Solution" });
+  }
+  if (role) {
+    allHeadings.push({ type: "heading", text: "Role" });
+  }
+
+  // Add content block titles from content array (they appear after Role section)
+  if (content) {
+    content.forEach((block) => {
+      if ("title" in block && block.title) {
+        allHeadings.push({ type: "heading", text: block.title });
+      }
+    });
+  }
+
+  // Add remaining sections in chronological order
+  if (lessons) {
+    allHeadings.push({ type: "heading", text: "Lessons" });
+  }
+  if (outcome) {
+    allHeadings.push({ type: "heading", text: "Outcome" });
+  }
+
   return (
     <div className="about-layout blog-layout">
       {backLink}
 
       <h1 className="blog-title">
-        {title.split(":").map((part, idx) => (
-          <span key={idx}>
-            {part}
-            {idx === 0 && <br />}
-          </span>
-        ))}
+        {title}
         {date && <span className="blog-date">{date}</span>}
       </h1>
 
-      {renderBlockSection("Background", background)}
-      {renderBlockSection("Solution", solution)}
-      {renderBlockSection("Role", role)}
-      {renderContentBlocks(content)}
-      {renderBlockSection("Lessons", lessons)}
-      {renderBlockSection("Outcome", outcome)}
+      <div className="blog-content">
+        <div className="blog-main">
+          {renderBlockSection("Background", background)}
+          {renderBlockSection("Solution", solution)}
+          {renderBlockSection("Role", role)}
+          {renderContentBlocks(content)}
+          {renderBlockSection("Lessons", lessons)}
+          {renderBlockSection("Outcome", outcome)}
+        </div>
+
+        <TableOfContents content={allHeadings} />
+      </div>
     </div>
   );
 }

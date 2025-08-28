@@ -1,0 +1,98 @@
+@use "../utils/variables" as vars;
+
+.table-of-contents {
+  position: sticky;
+  top: 2rem;
+  width: 280px;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding: 1.5rem;
+  margin-left: 2rem;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  .toc-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 1rem 0;
+    font-family: vars.$font-title;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all vars.$transition-smooth;
+
+    &.toc-subitem {
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 1px solid #e5e7eb;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: #e5e7eb;
+      }
+    }
+
+    &.toc-active {
+      .toc-link {
+        color: #f97316;
+        font-weight: 500;
+        transition: color vars.$transition-smooth;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 1.5rem;
+        background: #f97316;
+        border-radius: 2px;
+        transition: all vars.$transition-smooth;
+      }
+    }
+  }
+
+  .toc-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+    color: #374151;
+    font-size: 0.95rem;
+    font-family: vars.$font-description;
+    cursor: pointer;
+    transition: color vars.$transition-smooth;
+    text-decoration: none;
+    line-height: 1.4;
+
+    &:hover {
+      color: #f97316;
+    }
+
+    &:focus {
+      outline: none;
+      color: #f97316;
+    }
+  }
+}
