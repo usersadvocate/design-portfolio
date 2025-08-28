@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "../styles/components/footerNav.scss";
 
 import ArrowLeft from "../icons/arrow-left.svg";
@@ -13,6 +14,7 @@ const navItems = [
 
 export default function FooterNav() {
   const { id } = useParams();
+  const [isAtBottom, setIsAtBottom] = useState(false);
   const currentIndex = navItems.findIndex((item) => item.id === id);
 
   const prevItem = currentIndex > 0 ? navItems[currentIndex - 1] : null;
@@ -21,8 +23,23 @@ export default function FooterNav() {
       ? navItems[currentIndex + 1]
       : null;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isBottom = scrollTop + windowHeight >= documentHeight - 10; // 10px threshold
+
+      setIsAtBottom(isBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="footer-nav">
+    <nav className={`footer-nav ${isAtBottom ? "at-bottom" : ""}`}>
       <div className="nav-container">
         <div className="nav-item nav-left">
           {prevItem && (
