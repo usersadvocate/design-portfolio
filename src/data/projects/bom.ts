@@ -1,19 +1,19 @@
 const bom = {
   title: "BOM Portal",
-  description: "Procurement tool on a cloud platform from scratch",
+  description: "User engagement redesign for procurement tool",
   year: "2023",
   scope: "Product Market Fit",
   cover: "/images/bom.png",
   link: "/project/bom",
   bodySections: [
     {
-      title: "The current UI problems",
+      title: "The problem space",
       description:
         "1. Users couldn't easily locate features like Releases and Adding Alternates. \n2. Users missed critical information due to excessive horizontal scrolling in data-heavy BOMs.",
       image: "/images/bom-ui-old.png",
     },
     {
-      title: "The new UI advantages",
+      title: "The new experience",
       description:
         "1. Improved feature discoverability by bringing all functionality to the main interface. \n2. Reduced horizontal scrolling through strategic data grouping and layout optimization.",
       image: "/images/bom-ui-new.png",
@@ -24,7 +24,7 @@ const bom = {
       id: "background",
       title: "Background",
       content:
-        "The current UI of the BOM Portal doesn't encourage engagement on the first interaction. As a product team, we understand the tool's importance in the market, but the product itself has difficulty encouraging users to use it.",
+        "At the time, the UI of the BOM Portal didn't encourage engagement on the first interaction. As a product team, we understand the tool's importance in the market, but the product itself has difficulty encouraging users to use it.",
     },
     {
       id: "solution",
