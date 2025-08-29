@@ -3,7 +3,7 @@ const plego = {
   description: "Team work on scalability of the design system",
   year: "2022",
   scope: "Design system",
-  cover: "/images/plego.png",
+  cover: "/images/plego.webp",
   link: "/project/plego",
   bodySections: [
     {
@@ -16,7 +16,7 @@ const plego = {
       title: "Lack of consistency",
       description:
         "We realized that we greatly lack consistency and rigor in our design. There were complex heavy elements. Some of them were quite large, so we separated them to the atomic level. It would allow anyone using the design system to combine the atoms and molecules to form organisms that fit the needs of any page and the content. It was very important for us to eventually get flexible building blocks that could work in combination with each other in any combination.",
-      image: "/images/non-consistency.png",
+      image: "/images/non-consistency.webp",
     },
     {
       title: "",
@@ -27,31 +27,31 @@ const plego = {
     {
       title: "",
       description: "",
-      image: "/images/consistency.png",
+      image: "/images/consistency.webp",
     },
     {
       title: "Building components",
       description:
         "The main goal was to create a Lego-like constructor from which to create a layout. A kind of framework tool within the development team for UX designers. We called our system “Plego” (Potok + Lego). Each component has all possible states, which are switched through the settings panel in a couple of clicks.",
-      image: "/images/workspace.png",
+      image: "/images/workspace.webp",
     },
     {
       title: "",
       description:
         "All product pages were moved to the library in the form of layouts, so that the designer did not need to reassemble the pages already, but only make changes to them if necessary.",
-      image: "/images/arrangement.png",
+      image: "/images/arrangement.webp",
     },
     {
       title: "",
       description:
         "This allowed UX designers to avoid using a separate Wireframe library, and design features to see the result immediately. And most importantly, all this greatly reduced the time from the design sprint to the design review.",
-      image: "/images/settings.png",
+      image: "/images/settings.webp",
     },
     {
       title: "Results",
       description:
         "Passing functions from designers to developers became less error-prone because developers can easily identify the building blocks used in projects and find the appropriate components and styles in the codebase. Standardization helped developers use code as efficiently as possible and ensure that the resulting user interface is consistent with the design.",
-      image: "/images/timeline.png",
+      image: "/images/timeline.webp",
     },
   ],
   sections: [

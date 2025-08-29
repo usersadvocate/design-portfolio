@@ -3,20 +3,20 @@ const bom = {
   description: "User engagement redesign for procurement tool",
   year: "2023",
   scope: "Product Market Fit",
-  cover: "/images/bom.png",
+  cover: "/images/bom.webp",
   link: "/project/bom",
   bodySections: [
     {
       title: "The problem space",
       description:
         "1. Users couldn't easily locate features like Releases and Adding Alternates. \n2. Users missed critical information due to excessive horizontal scrolling in data-heavy BOMs.",
-      image: "/images/bom-ui-old.png",
+      image: "/images/bom-ui-old.webp",
     },
     {
       title: "The new experience",
       description:
         "1. Improved feature discoverability by bringing all functionality to the main interface. \n2. Reduced horizontal scrolling through strategic data grouping and layout optimization.",
-      image: "/images/bom-ui-new.png",
+      image: "/images/bom-ui-new.webp",
     },
   ],
   sections: [

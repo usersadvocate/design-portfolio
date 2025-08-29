@@ -91,7 +91,7 @@ const ai: SideProjectBlog = {
       "Examples Library: Side-by-side comparisons of good vs. bad copy",
     ]),
     createImage(
-      "/images/copy-examples.png",
+      "/images/copy-examples.webp",
       "Examples of good and bad copy side-by-side from the framework documentation"
     ),
 
@@ -121,7 +121,7 @@ const ai: SideProjectBlog = {
       "This human-centered approach to AI training ensured the output consistently matched our empathetic, user-first approach to product copy."
     ),
     createImage(
-      "/images/copy-help.png",
+      "/images/copy-help.webp",
       "Help messages based on the framework"
     ),
 
