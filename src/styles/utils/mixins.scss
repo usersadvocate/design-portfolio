@@ -46,7 +46,7 @@
 @mixin link-style($base-color: vars.$color-text-secondary) {
   color: $base-color;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color vars.$transition-fast;
   cursor: pointer;
 
   &:hover {

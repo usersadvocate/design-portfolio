@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projectData";
-import "../styles/components/projectLayout.scss";
-import FooterNav from "../components/FooterNav";
+import "../styles/components/projectPage.scss";
+import FooterNav from "../components/layout/FooterNav";
 
 export default function Project() {
   const { id } = useParams();

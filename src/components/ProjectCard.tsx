@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useDeferredValue } from "react";
-import "../styles/components/projectSection.scss";
-import EnhancedButton from "./EnhancedButton";
+import "../styles/components/projectCard.scss";
+import EnhancedButton from "./ui/EnhancedButton";
 
-type ProjectSectionProps = {
+type ProjectCardProps = {
   title: string;
   description: string;
   cover: string;
@@ -12,14 +12,14 @@ type ProjectSectionProps = {
   link: string;
 };
 
-export default function ProjectSection({
+export default function ProjectCard({
   title,
   description,
   cover,
   year,
   scope,
   link,
-}: ProjectSectionProps) {
+}: ProjectCardProps) {
   // Use deferred value for performance optimization
   const deferredTitle = useDeferredValue(title);
   const deferredDescription = useDeferredValue(description);

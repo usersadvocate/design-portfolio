@@ -41,7 +41,7 @@
       transform: translateX(-50%);
       font-family: vars.$font-note;
       font-size: 2rem;
-      color: #000;
+      color: vars.$color-black;
       white-space: nowrap;
 
       &:hover {

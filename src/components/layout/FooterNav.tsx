@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import { useSyncExternalStore } from "react";
-import "../styles/components/footerNav.scss";
+import "../../styles/components/footerNav.scss";
 
-import ArrowLeft from "../icons/arrow-left.svg";
-import ArrowRight from "../icons/arrow-right.svg";
+import ArrowLeft from "../../icons/arrow-left.svg";
+import ArrowRight from "../../icons/arrow-right.svg";
 
 const navItems = [
   { id: "onboarding", label: "Onboarding Project" },
@@ -54,7 +54,7 @@ export default function FooterNav() {
         </div>
 
         <div className="nav-item nav-center">
-          <Link to="/#work">Home</Link>
+          <Link to="/project">Home</Link>
         </div>
 
         <div className="nav-item nav-right">

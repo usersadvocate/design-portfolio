@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import "../styles/components/aboutLayout.scss";
+import "../styles/components/aboutPageLayout.scss";
 import sideProjectsData from "../data/sideProjectsData";
 import BlogLayout from "../components/BlogLayout";
 import TweetLayout from "../components/TweetLayout";
-import AboutLayout from "../components/AboutLayout";
-import BackLink from "../components/BackLink";
+import AboutPageLayout from "../components/AboutPageLayout";
+import BackLink from "../components/ui/BackLink";
 
 export default function About() {
   const { id } = useParams();
@@ -19,7 +19,7 @@ export default function About() {
   }
 
   if (data.type === "about") {
-    return <AboutLayout data={data} />;
+    return <AboutPageLayout data={data} />;
   }
 
   return <TweetLayout data={data} />;

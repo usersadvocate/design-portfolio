@@ -9,11 +9,16 @@ $color-text-primary: #0551cd;
 $color-text-secondary: #26281B;
 $color-text-acent: #ec3e23;
 
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-medium: #374151;
+$color-gray-light: #e5e7eb;
+
 $font-title: "Outfit";
 $font-description: "Zilla Slab", sans-serif;
 $font-note: "Caveat", cursive;
 
 $grid-color: #a09789;
 
-// Transitions
 $transition-smooth: 0.3s ease;
+$transition-fast: 0.2s ease;

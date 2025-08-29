@@ -16,7 +16,7 @@
   .toc-title {
     font-size: 1.1rem;
     font-weight: 400;
-    color: #374151;
+    color: vars.$color-gray-medium;
     margin: 0 0 1rem 0;
     font-family: vars.$font-title;
   }
@@ -36,7 +36,7 @@
     &.toc-subitem {
       margin-left: 1rem;
       padding-left: 1rem;
-      border-left: 1px solid #e5e7eb;
+      border-left: 1px solid vars.$color-gray-light;
 
       &::before {
         content: "";
@@ -45,7 +45,7 @@
         top: 0;
         bottom: 0;
         width: 1px;
-        background: #e5e7eb;
+        background: vars.$color-gray-light;
       }
     }
 
@@ -78,7 +78,7 @@
     background: none;
     border: none;
     padding: 0.5rem 0;
-    color: #374151;
+    color: vars.$color-gray-medium;
     font-size: 0.95rem;
     font-family: vars.$font-description;
     cursor: pointer;

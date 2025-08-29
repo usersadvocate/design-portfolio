@@ -35,9 +35,10 @@ module.exports = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         use: ["@svgr/webpack"],
+        type: "javascript/auto",
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|webp)$/i,
         type: "asset/resource",
       },
       {
@@ -53,7 +54,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "public/images"),
+          from: path.resolve(__dirname, "public/images/optimized"),
           to: "images",
         },
         { from: "public/icons", to: "icons" },

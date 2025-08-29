@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import "../../styles/components/enhancedButton.scss";
 
 interface EnhancedButtonProps {
   children: React.ReactNode;

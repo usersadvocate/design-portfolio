@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components/aboutSection.scss";
+import "../styles/components/homeAboutSection.scss";
 
 export default function AboutSection() {
   return (

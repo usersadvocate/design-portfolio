@@ -1,4 +1,4 @@
-import ArrowLeft from "../icons/arrow-left.svg";
+import ArrowLeft from "../../icons/arrow-left.svg";
 
 export default function BackLink() {
   return (

@@ -1,4 +1,5 @@
 @use "../utils/variables" as vars;
+@use "sass:color";
 
 .error-boundary,
 .error-fallback {
@@ -34,11 +35,11 @@
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color vars.$transition-fast;
     font-family: vars.$font-title;
 
     &:hover {
-      background-color: darken(vars.$color-text-primary, 10%);
+      background-color: color.adjust(vars.$color-text-primary, $lightness: -10%);
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/components/plainButton.scss";
+import "../../styles/components/plainButton.scss";
 
 type PlainButtonProps = {
   label: string;

@@ -36,7 +36,7 @@
   }
 
   .nav-item {
-    @include mixins.link-style(#fff);
+    @include mixins.link-style(vars.$color-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@
   }
 
   a {
-    @include mixins.link-style(#fff);
+    @include mixins.link-style(vars.$color-white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
