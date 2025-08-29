@@ -40,13 +40,7 @@ export default function AboutSection() {
           <Link to="/about/pet_project">Exploring design engineering;</Link>
         </li>
         <li>
-          <a
-            href="https://www.meetup.com/members/376807802/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Community-minded;
-          </a>
+          <Link to="/about/community">Building community connections;</Link>
         </li>
       </ul>
     </section>

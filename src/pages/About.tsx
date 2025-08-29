@@ -3,6 +3,7 @@ import "../styles/components/aboutLayout.scss";
 import sideProjectsData from "../data/sideProjectsData";
 import BlogLayout from "../components/BlogLayout";
 import TweetLayout from "../components/TweetLayout";
+import AboutLayout from "../components/AboutLayout";
 import BackLink from "../components/BackLink";
 
 export default function About() {
@@ -15,6 +16,10 @@ export default function About() {
 
   if (data.type === "blog") {
     return <BlogLayout data={data} backLink={<BackLink />} />;
+  }
+
+  if (data.type === "about") {
+    return <AboutLayout data={data} />;
   }
 
   return <TweetLayout data={data} />;

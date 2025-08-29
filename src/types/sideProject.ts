@@ -33,3 +33,10 @@ export type SideProjectBlog = {
   lessons?: Block[];
   outcome?: Block[];
 };
+
+export type SideProjectAbout = {
+  type: "about";
+  description: string;
+  images: string[];
+  caption?: string;
+};
