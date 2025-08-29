@@ -54,7 +54,7 @@ export default function FooterNav() {
         </div>
 
         <div className="nav-item nav-center">
-          <Link to="/">Home</Link>
+          <Link to="/#work">Home</Link>
         </div>
 
         <div className="nav-item nav-right">

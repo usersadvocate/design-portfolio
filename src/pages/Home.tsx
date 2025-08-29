@@ -13,9 +13,11 @@ export default function Home() {
     <div className="grid-overlay">
       <HeroSection />
       <AboutSection />
-      {Object.entries(projectData).map(([id, project]) => (
-        <ProjectSection key={id} {...project} />
-      ))}
+      <section id="work">
+        {Object.entries(projectData).map(([id, project]) => (
+          <ProjectSection key={id} {...project} />
+        ))}
+      </section>
       <Footer />
     </div>
   );

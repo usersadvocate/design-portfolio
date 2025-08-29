@@ -3,7 +3,7 @@ import "../styles/components/aboutSection.scss";
 
 export default function AboutSection() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <p className="about__title">
         As a designer with a{" "}
         <a
