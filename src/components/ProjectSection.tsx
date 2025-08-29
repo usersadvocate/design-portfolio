@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDeferredValue } from "react";
 import "../styles/components/projectSection.scss";
-import { PlainButton } from "./PlainButton";
+import EnhancedButton from "./EnhancedButton";
 
 type ProjectSectionProps = {
   title: string;
@@ -37,7 +37,7 @@ export default function ProjectSection({
             <strong>Scope:</strong> {scope}
           </p>
           <div className="project__button">
-            <PlainButton label="Read case study" />
+            <EnhancedButton>Read case study</EnhancedButton>
           </div>
         </div>
         <div className="project__image">

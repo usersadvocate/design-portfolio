@@ -3,6 +3,7 @@
 @use "./base/grid.scss";
 @use "./base/reset";
 @use "./components/tableOfContents.scss";
+@use "./components/enhancedButton.scss";
 
 
 *,
@@ -15,10 +16,4 @@ body {
   margin: 0;
   font-family: vars.$font-title;
   background-color: vars.$color-bg;
-}
-
-.tweet-layout .back-link {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
