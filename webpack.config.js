@@ -54,7 +54,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "public/images"),
+          from: path.resolve(__dirname, "public/images/optimized"),
           to: "images",
         },
         { from: "public/icons", to: "icons" },
