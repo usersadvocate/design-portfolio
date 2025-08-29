@@ -39,12 +39,12 @@ const onboarding = {
       content:
         "As the lead designer, I simplified the complex onboarding workflow by breaking it into manageable steps. Applied two key design principles - simplicity and progressive disclosure - to help users navigate the entire process without feeling overwhelmed.",
     },
-    //   {
-    //     id: "lessons",
-    //     title: "Lessons",
-    //     content:
-    //       ""
-    // },
+    {
+      id: "lessons",
+      title: "Lessons",
+      content:
+        "The team learned the importance of translating technical concepts into accessible language and setting realistic expectations based on users' actual capabilities rather than assumed technical knowledge.",
+    },
     {
       id: "outcome",
       title: "Outcome",

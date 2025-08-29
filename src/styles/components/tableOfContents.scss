@@ -15,7 +15,7 @@
 
   .toc-title {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #374151;
     margin: 0 0 1rem 0;
     font-family: vars.$font-title;
@@ -51,7 +51,7 @@
 
     &.toc-active {
       .toc-link {
-        color: #f97316;
+        color: vars.$color-text-acent;
         font-weight: 500;
         transition: color vars.$transition-smooth;
       }
@@ -64,7 +64,7 @@
         transform: translateY(-50%);
         width: 3px;
         height: 1.5rem;
-        background: #f97316;
+        background: vars.$color-text-acent;
         border-radius: 2px;
         transition: all vars.$transition-smooth;
       }
@@ -87,12 +87,12 @@
     line-height: 1.4;
 
     &:hover {
-      color: #f97316;
+      color: vars.$color-text-acent;
     }
 
     &:focus {
       outline: none;
-      color: #f97316;
+      color: vars.$color-text-acent;
     }
   }
 }
