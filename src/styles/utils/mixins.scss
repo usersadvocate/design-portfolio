@@ -1,4 +1,5 @@
 @use "./variables" as vars;
+@use "sass:color";
 
 @mixin grid-overlay($with-mask: true) {
   position: relative;
@@ -50,6 +51,12 @@
   cursor: pointer;
 
   &:hover {
-    color: #ec3e23;
+    @if $base-color == vars.$color-text-acent {
+      // If accent color is already set, make it darker on hover
+      color: color.adjust($base-color, $lightness: -15%);
+    } @else {
+      // If accent color is not set, use accent color on hover
+      color: vars.$color-text-acent;
+    }
   }
 }

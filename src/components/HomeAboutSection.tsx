@@ -7,13 +7,20 @@ export default function AboutSection() {
       <p className="about__title">
         As a designer with a{" "}
         <a
-          href="https://github.com/julpchelova"
+          href="https://www.linkedin.com/in/julia-pchelova/details/experience/"
           target="_blank"
           rel="noopener noreferrer"
           className="about__title-note"
         >
           frontend background
-          <span className="about__title-label">check my github</span>
+          <a
+            href="https://github.com/julpchelova"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about__title-label"
+          >
+            check my github
+          </a>
           <svg
             className="about__title-arrow"
             xmlns="http://www.w3.org/2000/svg"

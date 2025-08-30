@@ -14,11 +14,6 @@ const onboarding = {
       description: `This case is under NDA, so I'm currently reworking all UI elements using 💜 Lovable - it'll be here soon. <br>In the meantime, you can read about how <a href='https://x.com/itsthearcher/status/1956334928657809806' target='_blank' rel='noopener noreferrer'>I work on a Figma plugin ${externalLinkIcon}</a>, <a href='/about/ai' target='_blank' rel='noopener noreferrer'>built a GPT-powered agent for UX copywriting ${externalLinkIcon}</a> or explore my other cases.`,
       image: "",
     },
-    {
-      title: "",
-      description: "",
-      image: "",
-    },
   ],
   sections: [
     {

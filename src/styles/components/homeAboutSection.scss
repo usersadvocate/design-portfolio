@@ -1,4 +1,5 @@
 @use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
 
 .about {
   display: flex;
@@ -29,7 +30,7 @@
     }
 
     &-note {
-      color: vars.$color-text-acent;
+      @include mixins.link-style(vars.$color-text-acent);
       position: relative;
       display: inline-block;
     }
@@ -102,10 +103,19 @@
         height: 0.8rem;
         background: url("../../../public/icons/scribble.svg") no-repeat center center;
         background-size: contain;
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 
         @media (max-width: 1200px) {
           top: 1.3rem;
         }
+      }
+
+      a {
+        @include mixins.link-style(vars.$color-text-acent);
+      }
+
+      &:hover::before {
+        filter: brightness(0) saturate(100%) invert(20%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(85%) contrast(97%);
       }
     }
   }

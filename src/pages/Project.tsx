@@ -49,7 +49,7 @@ export default function Project() {
             {section.image && (
               <img
                 src={section.image}
-                alt={section.title}
+                alt={section.title || "Project image"}
                 className="project-body-section__image"
               />
             )}
