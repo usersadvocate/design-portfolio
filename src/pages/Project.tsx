@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import projectData from "../data/projectData";
+import projectData from "../data/mainProjects";
 import "../styles/components/projectPage.scss";
 import FooterNav from "../components/layout/FooterNav";
 

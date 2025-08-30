@@ -1,4 +1,4 @@
-import { SideProjectBlog } from "../../types/sideProject";
+import { SideProjectBlog } from "../../types/SideProjectTypes";
 
 // Helper function to create content blocks
 const createContentBlock = (title: string, text: string[]) => ({

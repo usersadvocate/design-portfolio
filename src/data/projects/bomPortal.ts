@@ -4,7 +4,7 @@ const bom = {
   year: "2023",
   scope: "Product Market Fit",
   cover: "/images/bom.webp",
-  link: "/project/bom",
+  link: "/project/bom-portal",
   bodySections: [
     {
       title: "The problem space",

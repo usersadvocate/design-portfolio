@@ -5,7 +5,7 @@ const discovery = {
   year: "2022",
   scope: "User Research",
   cover: "/images/discovery.webp",
-  link: "/project/discovery",
+  link: "/project/continuous-discovery",
   bodySections: [
     {
       title: "Collaborative Efforts",

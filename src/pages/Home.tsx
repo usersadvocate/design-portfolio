@@ -5,7 +5,7 @@ import HomeAboutSection from "../components/HomeAboutSection";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/layout/Footer";
 
-import projectData from "../data/projectData";
+import projectData from "../data/mainProjects";
 
 import "../styles/global.scss";
 

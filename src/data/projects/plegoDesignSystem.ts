@@ -4,7 +4,7 @@ const plego = {
   year: "2022",
   scope: "Design system",
   cover: "/images/plego.webp",
-  link: "/project/plego",
+  link: "/project/plego-design-system",
   bodySections: [
     {
       title: "The Challenge",

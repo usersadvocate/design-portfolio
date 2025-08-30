@@ -1,5 +1,5 @@
-import { SideProjectAbout } from "../../types/sideProject";
-import { externalLinkIcon } from "../../utils/externalLinkIcon";
+import { SideProjectAbout } from "../../types/SideProjectTypes";
+import { externalLinkIcon } from "../../utils/externalLinkIconSvg";
 
 const community: SideProjectAbout = {
   type: "about",

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import "../styles/components/aboutPageLayout.scss";
-import sideProjectsData from "../data/sideProjectsData";
+import sideProjectsData from "../data/sideProjects";
 import BlogLayout from "../components/BlogLayout";
 import TweetLayout from "../components/TweetLayout";
 import AboutPageLayout from "../components/AboutPageLayout";

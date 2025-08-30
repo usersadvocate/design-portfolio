@@ -1,4 +1,4 @@
-import { externalLinkIcon } from "../../utils/externalLinkIcon";
+import { externalLinkIcon } from "../../utils/externalLinkIconSvg";
 
 const onboarding = {
   title: "Onboarding",
@@ -7,7 +7,7 @@ const onboarding = {
   year: "2025",
   scope: "Progressive Disclosure",
   cover: "/images/it-onboarding.webp",
-  link: "/project/onboarding",
+  link: "/project/it-onboarding",
   bodySections: [
     {
       title: "",

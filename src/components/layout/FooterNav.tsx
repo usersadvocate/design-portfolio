@@ -7,10 +7,10 @@ import ArrowLeft from "../../icons/arrow-left.svg";
 import ArrowRight from "../../icons/arrow-right.svg";
 
 const navItems = [
-  { id: "onboarding", label: "Onboarding Project" },
-  { id: "bom", label: "BOM Project" },
-  { id: "discovery", label: "Discovery Project" },
-  { id: "plego", label: "Plego Project" },
+  { id: "it-onboarding", label: "IT Onboarding Project" },
+  { id: "bom-portal", label: "BOM Portal Project" },
+  { id: "continuous-discovery", label: "Continuous Discovery Project" },
+  { id: "plego-design-system", label: "Plego Design System Project" },
 ];
 
 // Custom hook for scroll position

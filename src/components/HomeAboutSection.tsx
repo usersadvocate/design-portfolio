@@ -41,13 +41,15 @@ export default function AboutSection() {
       </p>
       <ul className="about__list">
         <li>
-          <Link to="/about/ai">Working with AI;</Link>
+          <Link to="/about/ai-copywriting-framework">Working with AI;</Link>
         </li>
         <li>
-          <Link to="/about/pet_project">Exploring design engineering;</Link>
+          <Link to="/about/figma-plugin">Exploring design engineering;</Link>
         </li>
         <li>
-          <Link to="/about/community">Building community connections;</Link>
+          <Link to="/about/community-connections">
+            Building community connections;
+          </Link>
         </li>
       </ul>
     </section>

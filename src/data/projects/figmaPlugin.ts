@@ -1,5 +1,5 @@
-import { SideProjectTweet } from "../../types/sideProject";
-import { externalLinkIcon } from "../../utils/externalLinkIcon";
+import { SideProjectTweet } from "../../types/SideProjectTypes";
+import { externalLinkIcon } from "../../utils/externalLinkIconSvg";
 
 const pet_project: SideProjectTweet = {
   type: "tweet",
