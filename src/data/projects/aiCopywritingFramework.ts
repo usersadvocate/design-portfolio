@@ -1,4 +1,5 @@
 import { SideProjectBlog } from "../../types/SideProjectTypes";
+import { externalLinkIcon } from "../../utils/externalLinkIconSvg";
 
 // Helper function to create content blocks
 const createContentBlock = (title: string, text: string[]) => ({
@@ -76,7 +77,7 @@ const ai: SideProjectBlog = {
   content: [
     // Discovery Phase
     createContentBlock("The Challenge Discovery", [
-      "The realization came during a routine product review when we noticed significant inconsistencies in our user-facing copy.\nError messages ranged from technical jargon to overly casual language, empty states provided little guidance, and our tone varied dramatically across different product areas.\nAs the team grew, this problem compounded.",
+      "The realization came during a routine product review when we noticed significant inconsistencies in our user-facing copy. Error messages ranged from technical jargon to overly casual language, empty states provided little guidance, and our tone varied dramatically across different product areas.\nAs the team grew, this problem compounded.",
     ]),
 
     // Framework Development
@@ -163,6 +164,12 @@ const ai: SideProjectBlog = {
     createHeading("Future Applications"),
     createParagraph(
       "The framework has become a template for other process improvements at our startup. The combination of structured documentation and AI assistance is now being applied to other areas like user research synthesis and design system maintenance. This project demonstrated how systematic thinking and emerging AI tools can solve real business problems, turning a process bottleneck into a competitive advantage through better user communication."
+    ),
+  ],
+
+  closingThoughts: [
+    createParagraph(
+      `One of the key ingredients for successfully building an AI agent is having experience in the area you're building it for. As a product designer at potok, <a href='https://medium.com/@pchelova.julia/ux-writing-e4ec11b106a6' target='_blank' rel='noopener noreferrer'>UX copywriting ${externalLinkIcon}</a> was part of my responsibilities, and this hands-on experience proved invaluable for training the AI and recognizing quality outputs.`
     ),
   ],
 };

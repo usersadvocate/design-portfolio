@@ -32,6 +32,7 @@ export type SideProjectBlog = {
   content?: (SideProjectContentBlock | Block)[];
   lessons?: Block[];
   outcome?: Block[];
+  closingThoughts?: Block[];
 };
 
 export type SideProjectAbout = {

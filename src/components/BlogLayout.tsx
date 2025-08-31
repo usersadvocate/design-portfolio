@@ -21,6 +21,7 @@ interface BlogLayoutProps {
     content?: (ContentBlock | Block)[];
     lessons?: Block[];
     outcome?: Block[];
+    closingThoughts?: Block[];
   };
   backLink: React.ReactElement;
 }
@@ -53,9 +54,11 @@ const renderBlock = (block: Block | ContentBlock, key: React.Key) => {
       );
     case "paragraph":
       return (
-        <p className="blog-text" key={key}>
-          {block.text}
-        </p>
+        <p
+          className="blog-text"
+          key={key}
+          dangerouslySetInnerHTML={{ __html: block.text }}
+        />
       );
     case "list":
       return (
@@ -93,8 +96,17 @@ const renderContentBlocks = (content?: ContentBlock[]) =>
   ) : null;
 
 export default function BlogLayout({ data, backLink }: BlogLayoutProps) {
-  const { title, date, background, solution, role, content, lessons, outcome } =
-    data;
+  const {
+    title,
+    date,
+    background,
+    solution,
+    role,
+    content,
+    lessons,
+    outcome,
+    closingThoughts,
+  } = data;
 
   // Extract headings in chronological order for table of contents (excluding main title)
   const allHeadings: Array<{ type: "heading"; text: string }> = [];
@@ -126,6 +138,9 @@ export default function BlogLayout({ data, backLink }: BlogLayoutProps) {
   if (outcome) {
     allHeadings.push({ type: "heading", text: "Outcome" });
   }
+  if (closingThoughts) {
+    allHeadings.push({ type: "heading", text: "Closing thoughts" });
+  }
 
   return (
     <div className="about-layout blog-layout">
@@ -144,6 +159,7 @@ export default function BlogLayout({ data, backLink }: BlogLayoutProps) {
           {renderContentBlocks(content)}
           {renderBlockSection("Lessons", lessons)}
           {renderBlockSection("Outcome", outcome)}
+          {renderBlockSection("Closing thoughts", closingThoughts)}
         </div>
 
         <TableOfContents content={allHeadings} />
